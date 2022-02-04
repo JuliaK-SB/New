@@ -6,7 +6,14 @@
   <con:parameters/>
   <con:method name="Method 1" id="b2254117-13ef-4416-94f8-4e8a059566c6" method="POST">
     <con:settings/>
-    <con:parameters/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>prop1</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
     <con:request name="Request 1" id="e69d87ac-d469-464c-9925-5d13ebf9b9e9" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:request/>
@@ -14,7 +21,12 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="prop1" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>prop1</con:entry>
+      </con:parameterOrder>
     </con:request>
   </con:method>
   <con:method name="Method 2" id="b494922d-3333-4a7f-80f8-0354b6da6f71" method="GET">
